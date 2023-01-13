@@ -17,6 +17,9 @@ public class MainClass {
         // TODO code application logic here
         PC pc = new PC();
         System.out.println(pc.hitungPC());
+        Listrik hitungListrik = new Listrik();
+        
+        hitungListrik.tampilHasil();
     }
     
 }

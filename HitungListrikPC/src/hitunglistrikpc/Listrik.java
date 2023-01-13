@@ -9,6 +9,9 @@ import java.util.Scanner;
  * @author User
  */
 public class Listrik extends PC{
+    
+    int monitor = this.monitor;
+    
     int biayaKwh = 1500;
     Scanner input = new Scanner(System.in);
     public int hitungListrik(){
@@ -21,6 +24,7 @@ public class Listrik extends PC{
     }
     
     public void tampilHasil(){
-        
+        //System.out.println("hai");
+        System.out.println("Monitor: "+this.monitor +" watt");
     }
 }

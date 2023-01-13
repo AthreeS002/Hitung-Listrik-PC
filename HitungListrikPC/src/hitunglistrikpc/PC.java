@@ -8,8 +8,9 @@ import java.util.Scanner;
  *
  * @author User
  */
-public class PC extends KomponenPC{
+public class PC {
     Scanner input = new Scanner(System.in);
+    int monitor, prosesor, gpu, mobo, ram, storage;
     public int hitungPC(){
         System.out.print("Monitor: ");
         this.monitor = input.nextInt();
