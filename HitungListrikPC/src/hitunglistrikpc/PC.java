@@ -10,25 +10,25 @@ import java.util.Scanner;
  */
 public class PC {
     Scanner input = new Scanner(System.in);
-    int monitor, prosesor, gpu, mobo, ram, storage;
-    public int hitungPC(){
-        System.out.print("Monitor: ");
-        this.monitor = input.nextInt();
-        
-        System.out.print("Prosesor: ");
-        this.prosesor = input.nextInt();
-        
-        System.out.print("GPU: ");
-        this.gpu = input.nextInt();
-        
-        System.out.print("Motherboard: ");
-        this.mobo = input.nextInt();
-        
-        System.out.print("RAM: ");
-        this.ram = input.nextInt();
-        
-        System.out.print("Storage: ");
-        this.storage = input.nextInt();
+    //int monitor, prosesor, gpu, mobo, ram, storage;
+    public int hitungPC(int monitor, int prosesor, int gpu, int mobo, int ram, int storage){
+//        System.out.print("Monitor: ");
+//        monitor = input.nextInt();
+//        
+//        System.out.print("Prosesor: ");
+//        prosesor = input.nextInt();
+//        
+//        System.out.print("GPU: ");
+//        gpu = input.nextInt();
+//        
+//        System.out.print("Motherboard: ");
+//        mobo = input.nextInt();
+//        
+//        System.out.print("RAM: ");
+//        ram = input.nextInt();
+//        
+//        System.out.print("Storage: ");
+//        storage = input.nextInt();
         
 //        System.out.println("\nMonitor: " +monitor + " watt");
 //        System.out.println("Prosesor: " +prosesor + " watt");

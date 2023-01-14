@@ -15,16 +15,36 @@ public class Listrik extends PC{
     int biayaKwh = 1500;
     Scanner input = new Scanner(System.in);
     public int hitungListrik(){
+        
+        System.out.print("Monitor: ");
+        int monitor = input.nextInt();
+        
+        System.out.print("Prosesor: ");
+        int prosesor = input.nextInt();
+        
+        System.out.print("GPU: ");
+        int gpu = input.nextInt();
+        
+        System.out.print("Motherboard: ");
+        int mobo = input.nextInt();
+        
+        System.out.print("RAM: ");
+        int ram = input.nextInt();
+        
+        System.out.print("Storage: ");
+        int storage = input.nextInt();
+        
         System.out.print("Total Penggunaan dalam satu hari: ");
         int penggunaan = input.nextInt();
         
-        int totalSebulan = (hitungPC() * penggunaan) * 30;
+        int totalSebulan = (hitungPC(monitor, prosesor, gpu, mobo, ram, storage) * penggunaan) * 30;
         int hitungListrikSebulan = (totalSebulan/1000) * this.biayaKwh;
         return hitungListrikSebulan;
     }
     
     public void tampilHasil(){
         //System.out.println("hai");
+        System.out.println(hitungListrik());
         System.out.println("Monitor: "+this.monitor +" watt");
     }
 }
