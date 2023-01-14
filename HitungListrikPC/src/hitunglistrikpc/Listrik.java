@@ -12,9 +12,9 @@ public class Listrik extends PC{
     
     int monitor = this.monitor;
     
-    int biayaKwh = 1500;
+    double biayaKwh = 1500.0;
     Scanner input = new Scanner(System.in);
-    public int hitungListrik(){
+    public double hitungListrik(){
         
         System.out.print("Monitor: ");
         int monitor = input.nextInt();
@@ -34,11 +34,11 @@ public class Listrik extends PC{
         System.out.print("Storage: ");
         int storage = input.nextInt();
         
-        System.out.print("Total Penggunaan dalam satu hari: ");
+        System.out.print("Total Penggunaan (jam) dalam satu hari: ");
         int penggunaan = input.nextInt();
         
         int totalSebulan = (hitungPC(monitor, prosesor, gpu, mobo, ram, storage) * penggunaan) * 30;
-        int hitungListrikSebulan = (totalSebulan/1000) * this.biayaKwh;
+        double hitungListrikSebulan = (totalSebulan/1000) * this.biayaKwh;
         return hitungListrikSebulan;
     }
     
